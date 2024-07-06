@@ -9,14 +9,13 @@ body{
 }
 
 @font-face {
-    font-family: "Circular"; /* Give your font a name */
-    src: url('fonts/circular-std-4.woff2') format('woff2'), /* Preferred format */
-         url('fonts/circular-std-4.woff') format('woff'), /* Fallback format */
-         /* Optional: Add TTF for older browsers */
+    font-family: "Circular";
+    src: url('fonts/circular-std-4.woff2') format('woff2'),
+         url('fonts/circular-std-4.woff') format('woff'),
          url('fonts/FontsFree-Net-CircularStd-Bold.ttf') format('truetype');
   }
 
-/*============ Header ===============*/
+/* Header */
 header{
     height: 90px;
     display: flex;
@@ -93,7 +92,7 @@ header nav a:hover{
 }
 
 
-/* ================ Main ============== */
+/* Main */
 
 main{
     min-height: 100vh;
@@ -208,7 +207,7 @@ aside img{
     font-size: 35px;
 }
 
-/*================== Footer =====================*/
+/* Footer */
 footer{
     height: 90px;
     display: flex;
@@ -230,7 +229,7 @@ footer nav a:hover{
     
 }
 
-/* ======Media query========= */
+/* Media query */
 
 @media (max-width:1250px) {
     .search, aside{
@@ -374,9 +373,3 @@ footer nav a:hover{
         white-space: pre;
     }
 }
-
-
-
-
-
-
