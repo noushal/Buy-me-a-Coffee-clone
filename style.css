@@ -1,0 +1,382 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 249, 249);
+}
+
+@font-face {
+    font-family: "Circular"; /* Give your font a name */
+    src: url('fonts/circular-std-4.woff2') format('woff2'), /* Preferred format */
+         url('fonts/circular-std-4.woff') format('woff'), /* Fallback format */
+         /* Optional: Add TTF for older browsers */
+         url('fonts/FontsFree-Net-CircularStd-Bold.ttf') format('truetype');
+  }
+
+/*============ Header ===============*/
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.star{
+    font-size: 18px;
+}
+
+.star-container{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.search{
+    display: flex;
+    background-color: rgb(239, 239, 239);
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+    width: 230px;
+}
+
+.top-desc{
+    font-size: 22px;
+}
+
+.menu-icon, .start-my-page-btn{
+    display: none;
+}
+
+.creator-no{
+    font-size: 18px;
+}
+
+.second-main-p{
+    font-size: 18px;
+}
+
+.signup-btn{
+    background-color: rgba(255, 221, 0);
+    padding: 12px 18px;
+    border-radius: 30px;
+}
+
+.search input{
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+    background-color: rgb(239, 239, 239);
+    outline: none;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    color:black;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+header nav a:hover{
+    background-color: rgb(239, 239, 239);
+    color: black;
+    cursor: pointer;
+}
+
+
+/* ================ Main ============== */
+
+main{
+    min-height: 100vh;
+}
+
+.first-section{
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-text h1{
+    font-size: 96px;
+    font-family: 'Circular';
+    display:block;
+    line-height: 90px;
+}
+
+
+.btn{
+    padding: 17px 50px; 
+    background-color: rgba(255, 221, 0);
+    border-radius: 50px;
+    font-size: 1.5em;
+    font-family: 'Circular';
+    margin: 50px 0 20px 0;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+}
+
+aside img{
+    width: 185px;
+    height: 170px;
+    border-radius: 20px;
+    box-shadow: rgba(130, 127, 127, 0.35) 0px 3px 7px;
+}
+
+.second-section, .third-section, .forth-section, .fifth-section, .creators-section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 200px 50px 200px;
+    padding: 50px 90px 50px 90px;
+    border-radius: 50px;
+}
+
+
+
+.inner-container{
+     display: flex;
+    justify-content: center; 
+}
+
+.outer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.platform-inner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.platform-inner-container .first-p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.platform-inner-container .second-p{
+    font-size: 20px;
+    color: gray;
+}
+
+.platform-inner-container img{
+    width: 55px;
+    height: 50px;
+}
+
+.box-first-p{
+    font-family: 'Circular';
+}
+
+.box-h{
+    font-family: 'Circular'; 
+    font-size: 64px;
+}
+
+.box-second-p{
+    font-weight: 400; 
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: gray;
+    font-weight: 500;
+}
+
+.platform-container{
+    margin: 50px 150px 50px 150px;
+    padding: 50px 90px 50px 90px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.inner-container i{
+    font-size: 35px;
+}
+
+/*================== Footer =====================*/
+footer{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+footer nav a{
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+footer nav a:hover{
+    color: gray;
+    cursor: pointer;
+    
+}
+
+/* ======Media query========= */
+
+@media (max-width:1250px) {
+    .search, aside{
+        display: none;
+    }
+
+    .second-section, .third-section, .forth-section, .fifth-section, .creators-section{
+        margin: 30px 40px 30px 40px;
+        padding: 30px 50px 30px 50px;   
+    }
+
+    .platform-container{
+        margin: 30px 40px 30px 40px;
+        padding: 30px 50px 30px 50px;
+        
+    
+    }
+    
+}
+
+@media (max-width:1023px){
+    .logo, .left-nav{
+        display: none;
+    }
+
+    .menu-icon{
+        display: inline;
+    }
+}
+
+@media (max-width:900px){
+    .platform-inner-container, .outer-container{
+        display: block;
+        grid-template-columns: none;
+        gap: 0;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p{
+        order: 3;
+        
+    }
+
+    footer div{
+        order: 2;
+        margin-bottom: 20px;
+    }
+
+    footer nav{
+        order: 1;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+@media (max-width:700px){
+    .second-section, .third-section, .forth-section, .fifth-section, .creators-section, .platform-container{
+        margin: 30px 30px 30px 30px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .creators-section{
+        margin: 0;
+    }
+
+
+    .first-section{
+        padding: 0px 30px;
+    }
+
+    .box-first-p{
+        font-size: 12px;
+    }
+    
+    .box-h{
+        font-size: 30px;
+    }
+    
+    .box-second-p, .top-desc{
+        font-size: 18px;
+    }
+
+    .main-text h1{
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .second-main-p{
+        font-size: 16px;
+    }
+
+    .btn{
+        margin-top: 5px;
+        padding: 9px 25px; 
+        font-size: medium;
+    }
+
+    .inner-container i{
+        font-size: 25px;
+    }
+
+    .creator-no, .star{
+        font-size: 12px;
+    }
+
+    
+    .star-container{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .login-text{
+        font-size: 14px;
+    }
+
+    .signup-btn{
+        display: none;
+    }
+
+    .right-nav a{
+        margin: 0px 0px 0px 15px;
+    }
+
+    .start-my-page-btn{
+        display: inline;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 18px 22px 18px 22px;
+        background-color: rgba(255, 221, 0);
+    }
+}
+
+@media (min-width:700px){
+    .break::after{
+        content: "\a";
+        white-space: pre;
+    }
+}
+
+
+
+
+
+
